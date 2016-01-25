@@ -1,0 +1,24 @@
+{
+  "name": "validate-inline-js",
+  "version": "0.0.0",
+  "description": "Validate that inline js in a html file is correct javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "posttest": "package-json-to-readme package.json --travis > readme.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micnews/validate-inline-js.git"
+  },
+  "author": "mic.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micnews/validate-inline-js/issues"
+  },
+  "homepage": "https://github.com/micnews/validate-inline-js#readme",
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "package-json-to-readme": "^1.5.0"
+  }
+}
