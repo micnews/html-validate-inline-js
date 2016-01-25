@@ -10,6 +10,17 @@ Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't 
 npm install validate-inline-js --save
 ```
 
+## Usage
+
+```js
+var validate = require("validate-inline-js");
+
+// will be an error if the inline js has syntax errors
+var error = validate('<html><script>window.alert(beep');
+
+console.log(error);
+
+```
 
 ## Tests
 
