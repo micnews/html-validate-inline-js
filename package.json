@@ -4,7 +4,7 @@
   "description": "Validate that inline js in a html file is correct javascript",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
+    "test": "semistandard | snazzy && tap test.js",
     "posttest": "package-json-to-readme package.json --travis > readme.md"
   },
   "repository": {
@@ -18,7 +18,13 @@
   },
   "homepage": "https://github.com/micnews/validate-inline-js#readme",
   "devDependencies": {
-    "ava": "^0.11.0",
-    "package-json-to-readme": "^1.5.0"
+    "package-json-to-readme": "^1.5.0",
+    "semistandard": "^7.0.5",
+    "snazzy": "^2.0.1",
+    "tap": "^5.1.2"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "syntax-error": "^1.1.4"
   }
 }
