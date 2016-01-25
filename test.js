@@ -1,7 +1,7 @@
 var test = require('tap').test;
 var validate = require('./');
 
-test('good inline js', t => {
+test('good inline js', function (t) {
   var input = '<script>window.foo = \'bar\';</script>';
   var actual = validate(input);
   var expected = null;
@@ -10,7 +10,7 @@ test('good inline js', t => {
   t.end();
 });
 
-test('bad inline js', t => {
+test('bad inline js', function (t) {
   var input = '<script>window.foo = bar bas;</script>';
   var actual = validate(input);
 
